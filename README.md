@@ -59,6 +59,9 @@ recreated in the main scale aws account.__
         ./cli53-linux-amd64 import -d --file actusa-export.zone socallinuxexpo.$tld
     done
 
+Zone Sync
+---
+
 Replicate records from `socallinuxexpo.org` to the "shadow" zones.  This should
 be done if recorders were modified via the API or the AWS console.  Changes
 should manually replicated and committed back to this repo.  This is becomes a
