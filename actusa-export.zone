@@ -1,0 +1,73 @@
+@	IN	SOA	dns1.actusa.net.	hostmaster.actusa.net. (
+			103		;serial
+			7200		;refresh
+			3600		;retry
+			604800		;expire
+			1800 )
+;
+;	Name Servers and Mail Servers
+;
+			IN	NS	dns1.actusa.net.
+			IN	NS	dns2.actusa.net.
+			IN	NS	dns3.actusa.net.
+			IN	MX	10 mail.socallinuxexpo.org.
+			IN	A	208.83.101.230
+			IN	AAAA	2607:ff38:2:6::e6
+			IN	TXT	"v=spf1 include:linuxfests.org ip4:216.113.188.96 mx a:mail.socallinuxexpo.org ~all"
+;
+;	Hosts for this Domain
+;
+_sip._udp	IN      SRV     0 0 5060 sip.socallinuxexpo.com.
+dynamic-ipv6-expo	IN	AAAA	2607:ff38:1:8100::1
+feeds			IN	CNAME	null.feedproxy.ghs.google.com.
+expo			IN	A	8.193.40.80
+			IN	AAAA	2607:ff38:3:8100::1
+sip			IN	A	208.83.101.234
+voip			IN	A	208.83.101.234
+asterisk		IN	A	208.83.101.234
+www-reg			IN	A	208.83.101.234
+www			IN	A	208.83.101.230
+			IN	AAAA	2607:ff38:2:6::e6
+reg			IN	A	208.83.101.232
+			IN	AAAA	2607:ff38:2:6::e8
+scalereg		IN	A	208.83.101.232
+			IN	AAAA	2607:ff38:2:6::e8
+wiki			IN	A	208.83.101.231
+			IN	AAAA	2607:ff38:2:6::e7
+utility			IN	A	208.83.101.233
+			IN	AAAA	2607:ff38:2:6::e9
+otrs			IN	A	208.83.101.206
+			IN	AAAA	2607:ff38:1:86::8
+scaleold		IN	A	208.83.101.205
+devserv			IN	A	208.83.101.234
+			IN	AAAA	2607:ff38:1:81::3
+mail			IN	A	208.83.101.226
+			IN	AAAA	2607:ff38:2:6::e2
+			IN	TXT	"v=spf1 a -all"
+lists			IN	A	208.83.101.229
+			IN	AAAA	2607:ff38:2:6::e5
+			IN	TXT	"v=spf1 a -all"
+maggie			IN	A	208.83.101.234
+			IN	AAAA	2607:ff38:1:81::3
+			IN	MX	10 mail.socallinuxexpo.org.
+scalecore		IN	A	208.83.100.65
+			IN	AAAA	2607:ff38:2::41
+scalecore-in		IN	A	208.83.101.225
+			IN	AAAA	2607:ff38:2:6::1
+cfp			IN	A	208.83.101.230
+			IN	AAAA	2607:ff38:2:6::e6
+tlfweb			IN	A	208.83.101.228
+			IN	AAAA	2607:ff38:2:6::e4
+blog			IN	A	208.83.101.234
+			IN	AAAA	2607:ff38:1:81::3
+rondevel		IN	A	208.83.101.234
+			IN	AAAA	2607:ff38:1:81::3
+scale7x			IN	A	208.83.101.235
+scale8x			IN	A	208.83.101.234
+			IN	AAAA	2607:ff38:1:81::3
+audio			IN	A	209.208.107.64
+signs			IN	A	74.121.4.41
+photos			IN	CNAME	scale.trovebox.com.
+helpdesk		IN	A	74.121.4.72
+			IN	AAAA	2607:ff38:3::48
+			IN	MX	10 mail.linuxfests.org.
