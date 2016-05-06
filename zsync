@@ -8,7 +8,7 @@ require 'pp'
 
 options = { debug: false }
 option_parser = OptionParser.new do |opts|
-  opts.banner = "Usage: foo [options] [--] <domain>"
+  opts.banner = "Usage: #{$0} [options] [--] <domain>"
   opts.separator ""
   opts.separator "Specific options:"
 
