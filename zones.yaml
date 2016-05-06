@@ -1,0 +1,10 @@
+---
+primary:
+  socallinuxexpo.org:
+    path: zones/scale/socallinuxexpo.org.zone
+    shadow:
+      - socallinuxexpo.net
+      - socallinuxexpo.com
+      - southerncalifornialinuxexpo.org
+      - southerncalifornialinuxexpo.net
+      - southerncalifornialinuxexpo.com

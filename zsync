@@ -1,0 +1,70 @@
+#!/usr/bin/env ruby
+
+require 'yaml'
+require 'open3'
+require 'tempfile'
+require 'optparse'
+require 'pp'
+
+options = { debug: false }
+option_parser = OptionParser.new do |opts|
+  opts.banner = "Usage: foo [options] [--] <domain>"
+  opts.separator ""
+  opts.separator "Specific options:"
+
+  opts.on("-d", "--debug", "Print debug messages") do |d|
+    options[:debug] = d
+  end
+
+  opts.on_tail("-h", "--help", "Show this message") do
+    puts opts
+    exit
+  end
+end
+option_parser.parse!
+
+unless ARGV.size == 1
+  raise "domain name argument is required"
+end
+
+zone = ARGV[0]
+conf = YAML.load(File.read('zones.yaml'))
+
+unless conf.has_key?('primary')
+  raise "zones.yaml is broken, yo"
+end
+unless conf['primary'].has_key?(zone)
+  raise "unknown domain name #{zone}"
+end
+unless conf['primary'][zone].has_key?('path')
+  raise "zones.yaml is broken, yo"
+end
+
+path = conf['primary'][zone]['path']
+
+output, status = Open3.capture2("./cli53-linux-amd64 export #{zone}")
+pp output if options[:debug]
+
+unless status == 0
+  raise "#{status} output: #{output}"
+end
+File.open(path, 'w') {|f| f.write(output) }
+
+generic = output.gsub(/^\$ORIGIN #{zone}./, '')
+
+Tempfile.open("#{zone}-generic.zone") do |tmp|
+  tmp.write(generic)
+  tmp.flush
+
+  unless conf['primary'][zone].has_key?('shadow')
+    raise "zones.yaml is broken, yo"
+  end
+
+  conf['primary'][zone]['shadow'].each do |szone|
+    output, status = Open3.capture2("./cli53-linux-amd64 import -d --replace --file #{tmp.path} #{szone}")
+    pp output if options[:debug]
+    unless status == 0
+      raise "#{status} output: #{output}"
+    end
+  end
+end
