@@ -1,0 +1,44 @@
+@	IN	SOA	dns1.actusa.net.	hostmaster.actusa.net. (
+			78		;serial
+			7200		;refresh
+			3600		;retry
+			604800		;expire
+			1800 )
+;
+;	Name Servers and Mail Servers
+;
+			IN	NS	dns1.actusa.net.
+			IN	NS	dns2.actusa.net.
+			IN	NS	dns3.actusa.net.
+			IN	MX	10 mail.linuxfests.org.
+			IN	A	208.83.101.227
+			IN	AAAA	2607:ff38:2:6::e3
+			IN	TXT	"v=spf1 include:actusa.net mx a:outsidemailers.linuxfests.org - -all"
+;
+;	Hosts for this Domain
+;
+outsidemailers		IN	A	208.83.101.226
+			IN	AAAA	2607:ff38:2:6::e2
+			IN	A	208.83.101.229
+			IN	AAAA	2607:ff38:2:6::e5
+			IN	A	74.121.4.72
+			IN	AAAA	2607:ff38:3::48
+			IN	A	208.83.101.232
+			IN	AAAA	2607:ff38:2:6::e8
+			IN	A	54.235.255.32
+mail			IN	A	208.83.101.226
+			IN	AAAA	2607:ff38:2:6::e2
+			IN      TXT     "v=spf1 a -all"
+db			IN	A	208.83.101.226
+			IN	AAAA	2607:ff38:2:6::e2
+			IN      TXT     "v=spf1 a -all"
+www			IN	A	208.83.101.227
+			IN	AAAA	2607:ff38:2:6::e3
+lists			IN	A	208.83.101.229
+			IN	AAAA	2607:ff38:2:6::e5
+			IN      TXT     "v=spf1 a -all"
+documents		IN	A	208.83.101.235
+			IN	AAAA	2607:ff38:2:6::eb
+			IN      TXT     "v=spf1 a -all"
+devopsreg		IN	A	54.235.255.32
+			IN      TXT     "v=spf1 a -all"
