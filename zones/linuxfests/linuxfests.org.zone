@@ -8,6 +8,7 @@ $ORIGIN linuxfests.org.
 @	172800	IN	NS	ns-1557.awsdns-02.co.uk.
 @	172800	IN	NS	ns-587.awsdns-09.net.
 @	3600	IN	TXT	"v=spf1 include:actusa.net mx a:outsidemailers.linuxfests.org - -all"
+google._domainkey   IN      TXT     "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxh05VrHxdv6eiJpKP6CbjkIMCji3qPkkuFmlAm3MBxpAoOgrXcou/JfZEOUkTk00V9jZPgH7jhNjsY0d8GeVu2fDzgcxcHPS3idZ89K5SElE0L8fXwf/p7ARFBukrh8LxADy+pHIaRpAKF/cw8CUmYpgRBYCCIyVzt1H623Dokbu8xQx+i0DK5sDgu72yz3LvBQQTHmOdct1oEOMHtQc4IOTDvy6qElQrmhOLejmN40IV94tKtg56Z4dfHXtkHBAbwUap1vtE20tUYkxi1kJ0Uf4uQm3hwugDarP3osO+e/aCnfoErT9/0gKbL7F8D9rTFLm17BAWfaIDgHTdt/DuQIDAQAB"
 db	3600	IN	A	208.83.101.226
 db	3600	IN	AAAA	2607:ff38:2:6::e2
 db	3600	IN	TXT	"v=spf1 a -all"
