@@ -6,13 +6,16 @@ during the transition to a hosted DNS service.
 
 Currently, SCALE has these domains with identical records:
 
-* `socallinuxexpo.org`
+* `socallinuxexpo.org` [primary]
 * `socallinuxexpo.net`
 * `socallinuxexpo.com`
+* `southerncalifornialinuxexpo.org`
+* `southerncalifornialinuxexpo.net`
+* `southerncalifornialinuxexpo.com`
 
 While, LinuxFests has these domains with identical records:
 
-* `linuxfests.org`
+* `linuxfests.org` [primary]
 * `linuxfests.net`
 * `linuxfests.com`
 
