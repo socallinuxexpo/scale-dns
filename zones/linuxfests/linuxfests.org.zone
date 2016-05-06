@@ -35,3 +35,5 @@ outsidemailers	3600	IN	AAAA	2607:ff38:3::48
 outsidemailers	3600	IN	AAAA	2607:ff38:2:6::e8
 www	3600	IN	A	208.83.101.227
 www	3600	IN	AAAA	2607:ff38:2:6::e3
+tskzc2mudznc    IN  CNAME   gv-2mbpmgf6ikwlin.dv.googlehosted.com.
+6mbbjr3glwz6    IN  CNAME   gv-znt3xbswxepvdi.dv.googlehosted.com.

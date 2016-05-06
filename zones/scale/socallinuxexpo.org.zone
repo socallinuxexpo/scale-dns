@@ -64,3 +64,5 @@ wiki	3600	IN	AAAA	2607:ff38:2:6::e7
 www-reg	3600	IN	A	208.83.101.234
 www	3600	IN	A	208.83.101.230
 www	3600	IN	AAAA	2607:ff38:2:6::e6
+jg5uqz5onam7    IN      CNAME   gv-isydihgzzmtlnj.dv.googlehosted.com.
+gvekrzn2wjbd    IN      CNAME   gv-atkfixrdalxfdz.dv.googlehosted.com.
