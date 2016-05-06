@@ -83,7 +83,7 @@ the zone `$ORIGIN`.
 
     git pull origin master
     make
-    ./cli53-linux-amd64 export socallinuxexpo.org > socallinuxexpo.org.zone
+    ./cli53-linux-amd64 export socallinuxexpo.org > zones/scale/socallinuxexpo.org.zone
     git diff
     git commit -m "add A records for foobar" socallinuxexpo.org.zone
     git push
@@ -100,7 +100,7 @@ Dump all zones and sanity check that the records are in sync.
 
     make
     for tld in org net com; do
-        ./cli53-linux-amd64 export socallinuxexpo.$tld > socallinuxexpo.${tld}.zone
+        ./cli53-linux-amd64 export socallinuxexpo.$tld > zones/scale/socallinuxexpo.${tld}.zone
     done
     diff -u socallinuxexpo.org.zone socallinuxexpo.net.zone
     diff -u socallinuxexpo.org.zone socallinuxexpo.com.zone
@@ -112,7 +112,7 @@ __This will delete any record in the zone that are not present in the in the
 import set.__
 
     make
-    sed -e 's/^$ORIGIN socallinuxexpo.org.//' socallinuxexpo.org.zone > socallinuxexpo.generic.zone
+    sed -e 's/^$ORIGIN socallinuxexpo.org.//' socallinuxexpo.org.zone > zones/scale/socallinuxexpo.generic.zone
     for tld in org net com; do
         ./cli53-linux-amd64 import -d --replace --file socallinuxexpo.generic.zone socallinuxexpo.$tld
     done
