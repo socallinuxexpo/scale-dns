@@ -56,7 +56,7 @@ recreated in the main scale aws account.__
     make
     for tld in org net com; do
         ./cli53-linux-amd64 create socallinuxexpo.$tld
-        ./cli53-linux-amd64 import -d --file actusa-export.zone socallinuxexpo.$tld
+        ./cli53-linux-amd64 import -d --file exports/actusa-socallinuxexpo-export.zone socallinuxexpo.$tld
     done
 
 Zone Sync
