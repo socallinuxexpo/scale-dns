@@ -1,0 +1,35 @@
+$ORIGIN linuxfests.org.
+@	900	IN	SOA	ns-1064.awsdns-05.org. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400
+@	3600	IN	A	208.83.101.227
+@	3600	IN	AAAA	2607:ff38:2:6::e3
+@	3600	IN	MX	10 mail.linuxfests.org.
+@	172800	IN	NS	ns-1064.awsdns-05.org.
+@	172800	IN	NS	ns-493.awsdns-61.com.
+@	172800	IN	NS	ns-1557.awsdns-02.co.uk.
+@	172800	IN	NS	ns-587.awsdns-09.net.
+@	3600	IN	TXT	"v=spf1 include:actusa.net mx a:outsidemailers.linuxfests.org - -all"
+db	3600	IN	A	208.83.101.226
+db	3600	IN	AAAA	2607:ff38:2:6::e2
+db	3600	IN	TXT	"v=spf1 a -all"
+devopsreg	3600	IN	A	54.235.255.32
+devopsreg	3600	IN	TXT	"v=spf1 a -all"
+documents	3600	IN	A	208.83.101.235
+documents	3600	IN	AAAA	2607:ff38:2:6::eb
+documents	3600	IN	TXT	"v=spf1 a -all"
+lists	3600	IN	A	208.83.101.229
+lists	3600	IN	AAAA	2607:ff38:2:6::e5
+lists	3600	IN	TXT	"v=spf1 a -all"
+mail	3600	IN	A	208.83.101.226
+mail	3600	IN	AAAA	2607:ff38:2:6::e2
+mail	3600	IN	TXT	"v=spf1 a -all"
+outsidemailers	3600	IN	A	208.83.101.226
+outsidemailers	3600	IN	A	208.83.101.229
+outsidemailers	3600	IN	A	74.121.4.72
+outsidemailers	3600	IN	A	208.83.101.232
+outsidemailers	3600	IN	A	54.235.255.32
+outsidemailers	3600	IN	AAAA	2607:ff38:2:6::e2
+outsidemailers	3600	IN	AAAA	2607:ff38:2:6::e5
+outsidemailers	3600	IN	AAAA	2607:ff38:3::48
+outsidemailers	3600	IN	AAAA	2607:ff38:2:6::e8
+www	3600	IN	A	208.83.101.227
+www	3600	IN	AAAA	2607:ff38:2:6::e3

@@ -1,4 +1,4 @@
 cli53-linux-amd64
-zones/scale/socallinuxexpo.com.zone
-zones/scale/socallinuxexpo.net.zone
-zones/scale/socallinuxexpo.generic.zone
+zones/**/*.com.zone
+zones/**/*.net.zone
+zones/**/*.generic.zone

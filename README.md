@@ -68,9 +68,11 @@ The initial zone creation and import of records.  __This should not be
 recreated in the main scale aws account.__
 
     make
-    for tld in org net com; do
-        ./cli53-linux-amd64 create socallinuxexpo.$tld
-        ./cli53-linux-amd64 import -d --file exports/actusa-socallinuxexpo-export.zone socallinuxexpo.$tld
+    for domain in socallinuxexpo linuxfests; do
+        for tld in org net com; do
+            ./cli53-linux-amd64 create ${domain}.${tld}
+            ./cli53-linux-amd64 import -d --file exports/actusa-${domain}-export.zone ${domain}.${tld}
+        done
     done
 
 Zone Sync

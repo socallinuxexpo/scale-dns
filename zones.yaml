@@ -8,3 +8,8 @@ primary:
       - southerncalifornialinuxexpo.org
       - southerncalifornialinuxexpo.net
       - southerncalifornialinuxexpo.com
+  linuxfests.org:
+    path: zones/linuxfests/linuxfests.org.zone
+    shadow:
+      - linuxfests.net
+      - linuxfests.com
