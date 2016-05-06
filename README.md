@@ -1,13 +1,20 @@
-DNS for socallinuxexpo.{org,net,com}
+DNS
 ===
 
-This repo is intended to serve as the canonical source of truth for SCALE DNS
-records during the transition to a hosted DNS service.  Currently, SCALE has
-these domains with identical records:
+This repo is intended to serve as the canonical source of truth for DNS records
+during the transition to a hosted DNS service.
+
+Currently, SCALE has these domains with identical records:
 
 * `socallinuxexpo.org`
 * `socallinuxexpo.net`
 * `socallinuxexpo.com`
+
+While, LinuxFests has these domains with identical records:
+
+* `linuxfests.org`
+* `linuxfests.net`
+* `linuxfests.com`
 
 At some point in the relatively near future (timescale of months), it would be
 worthwhile to have a technical discussion to determine if duplicate records
@@ -28,10 +35,14 @@ ensure the exact same set of records is present in multiple zones by reusing
 the same zone file.  This requires some additional handling with a hosted
 service that does not allow direct manipulation of it's configuration files.
 
-Therefore, to prevent the independent zones from drifting out of sync, the
-`socallinuxexpo.org` zone is to be considered authoritative.  Any record
-changes (create/update/replace/delete) should be made in that zone first then
-replicated to the others.
+Therefore, to prevent the independent zones from drifting out of sync, these
+zones are to be considered authoritative:
+
+* `socallinuxexpo.org`
+* `linuxfests.org`
+
+Any record changes (create/update/replace/delete) should be made in
+"authoritative" zone first then replicated to the "shadow" zones.
 
 
 cli53
