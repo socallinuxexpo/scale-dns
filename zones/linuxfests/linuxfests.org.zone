@@ -7,7 +7,7 @@ $ORIGIN linuxfests.org.
 @	172800	IN	NS	ns-493.awsdns-61.com.
 @	172800	IN	NS	ns-1557.awsdns-02.co.uk.
 @	172800	IN	NS	ns-587.awsdns-09.net.
-@	3600	IN	TXT	"v=spf1 include:actusa.net mx a:outsidemailers.linuxfests.org - -all"
+@	3600	IN	TXT	"v=spf1 include:actusa.net mx a:outsidemailers.linuxfests.org include:_spf.google.com -all"
 6mbbjr3glwz6	3600	IN	CNAME	gv-znt3xbswxepvdi.dv.googlehosted.com.
 _dmarc	3600	IN	TXT	"v=DMARC1; p=none; rua=mailto:pi3ti8fx@ag.dmarcian.com;"
 db	3600	IN	A	208.83.101.226
