@@ -2,7 +2,11 @@ $ORIGIN socallinuxexpo.org.
 @	900	IN	SOA	ns-345.awsdns-43.com. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400
 @	3600	IN	A	208.83.101.230
 @	3600	IN	AAAA	2607:ff38:2:6::e6
-@	3600	IN	MX	10 mail.socallinuxexpo.org.
+@       3600    IN      MX      1   ASPMX.L.GOOGLE.COM.
+@       3600    IN      MX      5   ALT1.ASPMX.L.GOOGLE.COM.
+@       3600    IN      MX      5   ALT2.ASPMX.L.GOOGLE.COM.
+@       3600    IN      MX      10  ASPMX2.GOOGLEMAIL.COM.
+@       3600    IN      MX      10  ASPMX3.GOOGLEMAIL.COM.
 @	172800	IN	NS	ns-345.awsdns-43.com.
 @	172800	IN	NS	ns-1066.awsdns-05.org.
 @	172800	IN	NS	ns-1608.awsdns-09.co.uk.
