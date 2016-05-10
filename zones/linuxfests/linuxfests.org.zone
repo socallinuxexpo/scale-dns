@@ -17,11 +17,6 @@ _dmarc	3600	IN	TXT	"v=DMARC1; p=none; rua=mailto:pi3ti8fx@ag.dmarcian.com;"
 db	3600	IN	A	208.83.101.226
 db	3600	IN	AAAA	2607:ff38:2:6::e2
 db	3600	IN	TXT	"v=spf1 a -all"
-devopsreg	3600	IN	A	54.235.255.32
-devopsreg	3600	IN	TXT	"v=spf1 a -all"
-documents	3600	IN	A	208.83.101.235
-documents	3600	IN	AAAA	2607:ff38:2:6::eb
-documents	3600	IN	TXT	"v=spf1 a -all"
 google._domainkey	3600	IN	TXT	"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxh05VrHxdv6eiJpKP6CbjkIMCji3qPkkuFmlAm3MBxpAoOgrXcou/JfZEOUkTk00V9jZPgH7jhNjsY0d8GeVu2fDzgcxcHPS3idZ89K5SElE0L8fXwf/p7ARFBukrh8LxADy+pHIaRpAKF/cw8CUmYpgRBYCCIyVzt1H623Dokbu8xQx+i0DK5sDgu72yz3Lv" "BQQTHmOdct1oEOMHtQc4IOTDvy6qElQrmhOLejmN40IV94tKtg56Z4dfHXtkHBAbwUap1vtE20tUYkxi1kJ0Uf4uQm3hwugDarP3osO+e/aCnfoErT9/0gKbL7F8D9rTFLm17BAWfaIDgHTdt/DuQIDAQAB"
 lists	3600	IN	A	208.83.101.229
 lists	3600	IN	AAAA	2607:ff38:2:6::e5
