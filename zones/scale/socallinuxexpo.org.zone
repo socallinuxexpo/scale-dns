@@ -15,22 +15,13 @@ $ORIGIN socallinuxexpo.org.
 _dmarc	3600	IN	TXT	"v=DMARC1; p=none; rua=mailto:pi3ti8fx@ag.dmarcian.com;"
 _sip._udp	3600	IN	SRV	0 0 5060 sip.socallinuxexpo.com.
 asterisk	3600	IN	A	208.83.101.234
-audio	3600	IN	A	209.208.107.64
-blog	3600	IN	A	208.83.101.234
-blog	3600	IN	AAAA	2607:ff38:1:81::3
-cfp	3600	IN	A	208.83.101.230
-cfp	3600	IN	AAAA	2607:ff38:2:6::e6
 devserv	3600	IN	A	208.83.101.234
 devserv	3600	IN	AAAA	2607:ff38:1:81::3
 dynamic-ipv6-expo	3600	IN	AAAA	2607:ff38:1:8100::1
 expo	3600	IN	A	8.193.40.80
 expo	3600	IN	AAAA	2607:ff38:3:8100::1
-feeds	3600	IN	CNAME	null.feedproxy.ghs.google.com.
 google._domainkey	3600	IN	TXT	"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqyFMZwDrNjPuXeTDUVR5mnsrh/cK6RyjcYp0lC4UOTpEdcqu+Bt0pNw1Dq2LYEAbzdAk0ffnVR7qgwE4AlyqxAIfc45DYriXQ6BB2zTKUcqOTT5WOTQRv8teF4CQyzmd6OF3tXaMK21pVnVG7eVXu44FIsE4TQYTpH/axlj1p9119RmNSbHfFJEfcbRs6qRHL" "GnpfNxtZLoVjf5KikfHKfQFYjtZHQsC43sATmcVEsesj/Xih3e/wQ2mXx1/u7wDQawk1Rs/7ORV8VfEYVEAQWcoJ4Ec0XS5Q0kY1UW2uqytlqAYbVtuYSOoKCQJ1ykeH5YKH/uGXjmOjoVOkgdSVwIDAQAB"
 gvekrzn2wjbd	3600	IN	CNAME	gv-atkfixrdalxfdz.dv.googlehosted.com.
-helpdesk	3600	IN	A	74.121.4.72
-helpdesk	3600	IN	AAAA	2607:ff38:3::48
-helpdesk	3600	IN	MX	10 mail.linuxfests.org.
 jg5uqz5onam7	3600	IN	CNAME	gv-isydihgzzmtlnj.dv.googlehosted.com.
 lists	3600	IN	A	208.83.101.229
 lists	3600	IN	AAAA	2607:ff38:2:6::e5
@@ -41,9 +32,6 @@ maggie	3600	IN	MX	10 mail.socallinuxexpo.org.
 mail	3600	IN	A	208.83.101.226
 mail	3600	IN	AAAA	2607:ff38:2:6::e2
 mail	3600	IN	TXT	"v=spf1 a -all"
-otrs	3600	IN	A	208.83.101.206
-otrs	3600	IN	AAAA	2607:ff38:1:86::8
-photos	3600	IN	CNAME	scale.trovebox.com.
 reg	3600	IN	A	208.83.101.232
 reg	3600	IN	AAAA	2607:ff38:2:6::e8
 rondevel	3600	IN	A	208.83.101.234
@@ -62,11 +50,8 @@ signs	3600	IN	A	74.121.4.41
 sip	3600	IN	A	208.83.101.234
 tlfweb	3600	IN	A	208.83.101.228
 tlfweb	3600	IN	AAAA	2607:ff38:2:6::e4
-utility	3600	IN	A	208.83.101.233
-utility	3600	IN	AAAA	2607:ff38:2:6::e9
 voip	3600	IN	A	208.83.101.234
 wiki	3600	IN	A	208.83.101.231
 wiki	3600	IN	AAAA	2607:ff38:2:6::e7
-www-reg	3600	IN	A	208.83.101.234
 www	3600	IN	A	208.83.101.230
 www	3600	IN	AAAA	2607:ff38:2:6::e6
