@@ -26,10 +26,10 @@ mail	3600	IN	TXT	"v=spf1 a -all"
 outsidemailers	3600	IN	A	166.78.142.18
 outsidemailers	3600	IN	A	208.83.101.226
 outsidemailers	3600	IN	A	208.83.101.229
-outsidemailers	3600	IN	A	74.121.4.72
 outsidemailers	3600	IN	A	208.83.101.232
-outsidemailers	3600	IN	A	54.235.255.32
-outsidemailers	3600	IN	AAAA	2001:4800:7815:105:be76:4eff:fe05:6fd2208.83.101.226
+outsidemailers  3600    IN      A       23.253.238.191
+outsidemailers	3600	IN	AAAA	2001:4800:7817:104:be76:4eff:fe04:490d
+outsidemailers	3600	IN	AAAA	2001:4800:7815:105:be76:4eff:fe05:6fd2
 outsidemailers	3600	IN	AAAA	2607:ff38:2:6::e2
 outsidemailers	3600	IN	AAAA	2607:ff38:2:6::e5
 outsidemailers	3600	IN	AAAA	2607:ff38:3::48
