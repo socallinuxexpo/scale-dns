@@ -13,7 +13,6 @@ $ORIGIN socallinuxexpo.org.
 @	172800	IN	NS	ns-784.awsdns-34.net.
 @	3600	IN	TXT	"v=spf1 include:linuxfests.org ip4:216.113.188.96 mx a:mail.socallinuxexpo.org ~all"
 _dmarc	3600	IN	TXT	"v=DMARC1; p=none; rua=mailto:pi3ti8fx@ag.dmarcian.com;"
-_sip._udp	3600	IN	SRV	0 0 5060 sip.socallinuxexpo.com.
 google._domainkey	3600	IN	TXT	"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqyFMZwDrNjPuXeTDUVR5mnsrh/cK6RyjcYp0lC4UOTpEdcqu+Bt0pNw1Dq2LYEAbzdAk0ffnVR7qgwE4AlyqxAIfc45DYriXQ6BB2zTKUcqOTT5WOTQRv8teF4CQyzmd6OF3tXaMK21pVnVG7eVXu44FIsE4TQYTpH/axlj1p9119RmNSbHfFJEfcbRs6qRHL" "GnpfNxtZLoVjf5KikfHKfQFYjtZHQsC43sATmcVEsesj/Xih3e/wQ2mXx1/u7wDQawk1Rs/7ORV8VfEYVEAQWcoJ4Ec0XS5Q0kY1UW2uqytlqAYbVtuYSOoKCQJ1ykeH5YKH/uGXjmOjoVOkgdSVwIDAQAB"
 gvekrzn2wjbd	3600	IN	CNAME	gv-atkfixrdalxfdz.dv.googlehosted.com.
 jg5uqz5onam7	3600	IN	CNAME	gv-isydihgzzmtlnj.dv.googlehosted.com.
