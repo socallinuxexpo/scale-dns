@@ -17,23 +17,17 @@ db	3600	IN	A	208.83.101.226
 db	3600	IN	AAAA	2607:ff38:2:6::e2
 db	3600	IN	TXT	"v=spf1 a -all"
 google._domainkey	3600	IN	TXT	"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxh05VrHxdv6eiJpKP6CbjkIMCji3qPkkuFmlAm3MBxpAoOgrXcou/JfZEOUkTk00V9jZPgH7jhNjsY0d8GeVu2fDzgcxcHPS3idZ89K5SElE0L8fXwf/p7ARFBukrh8LxADy+pHIaRpAKF/cw8CUmYpgRBYCCIyVzt1H623Dokbu8xQx+i0DK5sDgu72yz3Lv" "BQQTHmOdct1oEOMHtQc4IOTDvy6qElQrmhOLejmN40IV94tKtg56Z4dfHXtkHBAbwUap1vtE20tUYkxi1kJ0Uf4uQm3hwugDarP3osO+e/aCnfoErT9/0gKbL7F8D9rTFLm17BAWfaIDgHTdt/DuQIDAQAB"
-lists	3600	IN	A	208.83.101.229
-lists	3600	IN	AAAA	2607:ff38:2:6::e5
+lists	3600	IN	A	23.253.238.191
+lists	3600	IN	AAAA	2001:4800:7817:104:be76:4eff:fe04:490d
 lists	3600	IN	TXT	"v=spf1 a -all"
-mail	3600	IN	A	208.83.101.226
-mail	3600	IN	AAAA	2607:ff38:2:6::e2
-mail	3600	IN	TXT	"v=spf1 a -all"
-outsidemailers	3600	IN	A	166.78.142.18
-outsidemailers	3600	IN	A	208.83.101.226
-outsidemailers	3600	IN	A	208.83.101.229
-outsidemailers	3600	IN	A	208.83.101.232
+outsidemailers  3600    IN      A       166.78.142.18
+outsidemailers  3600    IN      A       23.253.76.211
 outsidemailers  3600    IN      A       23.253.238.191
+outsidemailers  3600    IN      A       216.113.188.96
+outsidemailers  3600    IN      A       173.0.84.225
 outsidemailers	3600	IN	AAAA	2001:4800:7817:104:be76:4eff:fe04:490d
 outsidemailers	3600	IN	AAAA	2001:4800:7815:105:be76:4eff:fe05:6fd2
-outsidemailers	3600	IN	AAAA	2607:ff38:2:6::e2
-outsidemailers	3600	IN	AAAA	2607:ff38:2:6::e5
-outsidemailers	3600	IN	AAAA	2607:ff38:3::48
-outsidemailers	3600	IN	AAAA	2607:ff38:2:6::e8
+outsidemailers	3600	IN	AAAA	2001:4800:7817:104:be76:4eff:fe04:490d
 tskzc2mudznc	3600	IN	CNAME	gv-2mbpmgf6ikwlin.dv.googlehosted.com.
 webmail	3600	IN	CNAME	ghs.google.com.
 www	86400	AWS	ALIAS	A d1j7e93w452uhu.cloudfront.net. Z2FDTNDATAQYW2 false
